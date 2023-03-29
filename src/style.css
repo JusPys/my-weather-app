@@ -1,0 +1,66 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: rgb(44, 41, 41);
+  margin-top: 20px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+p {
+  margin: 0;
+}
+
+.hour {
+  font-size: smaller;
+}
+
+i {
+  color: rgb(90, 85, 85);
+  padding: 20px;
+}
+
+.Today {
+  margin-bottom: 50px;
+}
+.Today i {
+  font-size: 100px;
+  padding: 0;
+  padding-top: 50px;
+}
+
+.City-search i {
+  font-size: 50px;
+}
+
+.City-search {
+  padding-top: 20px;
+}
+
+.Nextdays i {
+  font-size: 50px;
+}
+
+.Nextdays {
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  margin: 0;
+}
+
+.btn-primary {
+  background-color: gray;
+  border: none;
+}
+
+.celsius-main,
+.farenheit-main {
+  font-size: 15px;
+}

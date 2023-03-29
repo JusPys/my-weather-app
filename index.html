@@ -4,11 +4,133 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GitHub introduction</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Week 5 Challenge</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/161dd5113b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <h1>Hello git :)</h1>
-    <script src="script.js"></script>
+    <div class="container">
+      <div class="row">
+        <div class="col-2 Today">
+          <i class="fa-solid fa-cloud-sun"></i>
+        </div>
+        <div class="col-4 Today">
+          <h1 id ="city"> </h1>
+          <h2>
+            25 Feb
+            <div class="hour">12:30</div>
+          </h2>
+          <h3>
+            <span id="temp-main"> </span>
+            <!-- <span class="celsius-main" id="celsius-main"> -->
+              <!-- <a href=""> -->
+                ℃
+              <!-- </a> -->
+            </span>
+            <!-- | -->
+            <!-- <span class="farenheit-main" id="farenheit-main">
+              <a href="">°F</a> -->
+            <!-- </span> -->
+          </h3>
+          <p> Description: 
+            <span id="weather-desc-value"> sun behind the clouds </span>
+          </p>
+          <p> Humidity: 
+            <span id="humidity-value">  </span>
+          </p>
+           <p> Wind: 
+            <span id="wind-value">  </span>
+          </p>
+        </div>
+
+        <div class="col-1 city-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="col-4 city-search">
+          <form id="city-search-form">
+            <label for="city-search" class="form-label">Type the city</label>
+            <input type="text" id="city-search-input" class="form-control" />
+            <button
+              type="submit"
+              class="btn btn-primary mb-3"
+              id="search-button"
+            >
+              Search
+            </button>
+            <button type="button" class="btn btn-info" id="get-location-button">
+              Get location
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row Nextdays">
+        <div class="col-2 1st-Day">
+          <p>26 Feb</p>
+          <p>Sunday</p>
+          <i class="fa-solid fa-cloud-sun"></i>
+          <p>3℃</p>
+        </div>
+
+        <div class="col-2 2nd-Day">
+          <p>27 Feb</p>
+          <p>Monday</p>
+          <i class="fa-solid fa-cloud-sun"></i>
+          <p>1℃</p>
+        </div>
+
+        <div class="col-2 3rd-Day">
+          <p>28 Feb</p>
+          <p>Tuesday</p>
+          <i class="fa-solid fa-sun"></i>
+          <p>6℃</p>
+        </div>
+
+        <div class="col-2 4th-Day">
+          <p>1 Mar</p>
+          <p>Wednesday</p>
+          <i class="fa-solid fa-cloud-meatball"></i>
+          <p>-1℃</p>
+        </div>
+
+        <div class="col-2 5th-Day">
+          <p>2 Mar</p>
+          <p>Thursday</p>
+          <i class="fa-solid fa-cloud-meatball"></i>
+          <p>-1℃</p>
+        </div>
+
+        <div class="col-2 6th-Day">
+          <p>3 Mar</p>
+          <p>Friday</p>
+          <i class="fa-solid fa-cloud-sun-rain"></i>
+          <p>3℃</p>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
