@@ -64,3 +64,9 @@ i {
 .farenheit-main {
   font-size: 15px;
 }
+
+.code-source {
+  font-size: smaller;
+  color: gray;
+  margin-bottom: 20px;
+}
